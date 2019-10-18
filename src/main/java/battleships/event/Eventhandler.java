@@ -1,4 +1,4 @@
-package event;
+package battleships.event;
 
 import java.util.ArrayList;
 import java.util.HashMap;

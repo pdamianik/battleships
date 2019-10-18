@@ -1,4 +1,4 @@
-package content;
+package battleships.content;
 
 public class ContentLoader {
 	public ContentLoader() {
@@ -10,6 +10,6 @@ public class ContentLoader {
 	}
 
 	public Loadable[] listAvailable() {
-
+		return null;
 	}
 }
