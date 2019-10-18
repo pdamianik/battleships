@@ -1,4 +1,4 @@
-package battleships.content;
+package net.battleships.content;
 
 public class ContentLoader {
 	public ContentLoader() {

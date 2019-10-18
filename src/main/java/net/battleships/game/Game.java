@@ -1,4 +1,4 @@
-package battleships.game;
+package net.battleships.game;
 
 /**
  * This class represents the current state of the game
