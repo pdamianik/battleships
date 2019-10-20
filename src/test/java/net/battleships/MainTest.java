@@ -23,7 +23,7 @@ public class MainTest {
 
     @Test
     public void testZipFileFunctionality() throws IOException {
-        String extractedData = "";
+        StringBuilder extractedData = new StringBuilder();
         ZipFile zipFile = null;
 
         try {
@@ -38,15 +38,11 @@ public class MainTest {
         while(entries.hasMoreElements()){
             ZipEntry entry = entries.nextElement();
             InputStream stream = zipFile.getInputStream(entry);
-            extractedData += new String(stream.readAllBytes(), StandardCharsets.UTF_8);
+            extractedData.append(new String(stream.readAllBytes(), StandardCharsets.UTF_8));
         }
 
         String savedData = Files.readString(Paths.get("testResource/test.zip.data"));
 
-        if (extractedData.equals(savedData)) {
-            System.out.println("Extracted zipfile correctly.");
-        } else {
-            throw new IOException("Couldn't extract zipfile correctly!");
-        }
+        assertEquals("Extracted zip data and saved data should be the same", savedData, extractedData.toString());
     }
 }
