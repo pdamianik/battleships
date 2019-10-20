@@ -38,7 +38,7 @@ dependencies {
 
 jar {
     from('src/main') {
-        include "resources/**/*.ship", "resources/**/*.weapon", "resources/**/*.deck"
+        include "resources/**"
     }
     manifest {
         attributes 'Implementation-Title': 'Gradle Jar File Example',
