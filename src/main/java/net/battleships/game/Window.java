@@ -1,12 +1,14 @@
 package net.battleships.game;
 
-import java.awt.*;
+import javax.swing.*;
 import java.awt.event.*;
 
 public class Window {
     private int width;
     private int heigth;
     private String name;
+    private JFrame frame;
+    private boolean closeFrame = false;
 
     public Window(String name) {
         this.width = 100;
@@ -24,14 +26,16 @@ public class Window {
 
     private void startup(){
         //New Frame
-        Frame f = new Frame(this.name);
-        f.setVisible(true);
-        f.setSize(width, heigth);
+        this.frame = new JFrame(this.name);
+        frame.setVisible(true);
+        frame.setSize(width, heigth);
         //closes the window if you press on the X
-        f.addWindowListener(new WindowAdapter() {
+        frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent we) {
-                f.dispose();
+                if(JOptionPane.showConfirmDialog(frame, "Are you sure you want to quit?", "Are you sure you want to quit?", JOptionPane.YES_NO_OPTION)==0){
+                    frame.dispose();
+                }
             }
         } );
     }
