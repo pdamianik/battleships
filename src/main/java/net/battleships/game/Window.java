@@ -8,7 +8,22 @@ public class Window {
     private int height;
     private String name;
     private JFrame frame;
-    private boolean closeFrame = false;
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public JFrame getFrame() {
+        return frame;
+    }
 
     public Window(String name) {
         this.width = 100;
