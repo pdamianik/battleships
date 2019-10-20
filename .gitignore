@@ -3,7 +3,7 @@
 # Dont Ignore Intellij Idea .iml File
 !.idea/modules.xml
 !.idea/modules
-!.idea/modules/*.iml
+!.idea/**.iml
 
 # Ignore Gradle project-specific cache directory
 .gradle
