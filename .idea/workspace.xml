@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [javadoc]">
+  <component name="RunManager" selected="Gradle.battleships [build]">
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -156,9 +157,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.battleships [build]" />
         <item itemvalue="Gradle.battleships [javadoc]" />
         <item itemvalue="Gradle.battleships [test]" />
-        <item itemvalue="Gradle.battleships [build]" />
       </list>
     </recent_temporary>
   </component>
