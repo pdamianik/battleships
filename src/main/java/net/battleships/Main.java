@@ -3,8 +3,6 @@
  */
 package net.battleships;
 
-import com.google.gson.*;
-
 public class Main {
 	public String test = "test";
 
@@ -15,10 +13,5 @@ public class Main {
 	public static void main(String[] args) {
 		Main thisObject = new Main();
 		System.out.println(thisObject.getGreeting());
-		GsonBuilder gsonBuilder = new GsonBuilder();
-		Gson gson = gsonBuilder.create();
-		System.out.println(gson.toJson(thisObject));
-		System.out.println(gson.fromJson(gson.toJson(thisObject), Main.class));
-		System.out.println(gson.toJson(gson.fromJson(gson.toJson(thisObject), Main.class)));
 	}
 }

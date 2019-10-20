@@ -62,7 +62,7 @@ public class Window {
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent we) {
-                if(JOptionPane.showConfirmDialog(frame, "If you quit you will lose the game", "Are you sure you want to quit?", JOptionPane.YES_NO_OPTION)==0){
+                if(JOptionPane.showConfirmDialog(frame, "If you quit you will lose the game", "Are you sure you want to quit?", JOptionPane.YES_NO_OPTION)==JOptionPane.YES_OPTION){
                     frame.dispose();
                 }
             }
