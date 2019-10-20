@@ -4,9 +4,9 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Window {
-    int width;
-    int heigth;
-    String name;
+    private int width;
+    private int heigth;
+    private String name;
 
     public Window(String name) {
         this.width = 100;
