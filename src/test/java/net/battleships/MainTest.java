@@ -27,7 +27,7 @@ public class MainTest {
 		ZipFile zipFile = null;
 
 		try {
-			zipFile = new ZipFile("testResource/test.zip");
+			zipFile = new ZipFile("src/test/resources/test.zip");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -41,7 +41,7 @@ public class MainTest {
 			extractedData.append(new String(stream.readAllBytes(), StandardCharsets.UTF_8));
 		}
 
-		String savedData = Files.readString(Paths.get("testResource/test.zip.data"));
+		String savedData = Files.readString(Paths.get("src/test/resources/test.zip.data"));
 
 		assertEquals("Extracted zip data and saved data should be the same", savedData, extractedData.toString());
 	}
