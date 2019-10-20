@@ -1,5 +1,9 @@
 # Ignore Intellij Idea directory
-.idea
+.idea/**
+# Dont Ignore Intellij Idea .iml File
+!.idea/modules.xml
+!.idea/modules
+!.idea/modules/*.iml
 
 # Ignore Gradle project-specific cache directory
 .gradle
