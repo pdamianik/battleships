@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="battleships.net.battleships.main" target="11" />
-      <module name="battleships.net.battleships.test" target="11" />
+      <module name="net.battleships.main" target="11" />
+      <module name="net.battleships.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

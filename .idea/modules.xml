@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/battleships.iml" filepath="$PROJECT_DIR$/.idea/battleships.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/battleships.net.battleships.main.iml" filepath="$PROJECT_DIR$/.idea/modules/battleships.net.battleships.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/battleships.net.battleships.test.iml" filepath="$PROJECT_DIR$/.idea/modules/battleships.net.battleships.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java.net.battleships.iml" filepath="$PROJECT_DIR$/.idea/modules/java.net.battleships.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.battleships.iml" filepath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" />
