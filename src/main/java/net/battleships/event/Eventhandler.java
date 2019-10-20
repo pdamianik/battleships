@@ -14,6 +14,10 @@ public class Eventhandler {
 
 	}
 
+	public Eventhandler(Handler[] handlers) {
+
+	}
+
 	public void register(Handler handlers) {
 
 	}
