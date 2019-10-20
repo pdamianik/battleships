@@ -1,0 +1,3 @@
+Border = -1
+Ship = > 0
+Water = null

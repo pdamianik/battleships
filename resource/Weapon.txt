@@ -1,0 +1,2 @@
+Weapon= > 0
+Water = null
