@@ -5,19 +5,19 @@ import java.awt.event.*;
 
 public class Window {
     private int width;
-    private int heigth;
+    private int height;
     private String name;
 
     public Window(String name) {
         this.width = 100;
-        this.heigth = 100;
+        this.height = 100;
         this.name = name;
         this.startup();
     }
 
-    public Window(String name, int width, int heigth) {
+    public Window(String name, int width, int height) {
         this.width = width;
-        this.heigth = heigth;
+        this.height = height;
         this.name = name;
         this.startup();
     }
@@ -26,7 +26,7 @@ public class Window {
         //New Frame
         Frame f = new Frame(this.name);
         f.setVisible(true);
-        f.setSize(width, heigth);
+        f.setSize(width, height);
         //closes the window if you press on the X
         f.addWindowListener(new WindowAdapter() {
             @Override
