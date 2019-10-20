@@ -1,4 +1,4 @@
-package net.battleships.game;
+package net.battleships.graphics;
 
 import javax.swing.*;
 import java.awt.*;

@@ -5,4 +5,7 @@ package net.battleships.game;
  */
 
 public class Game {
+    private int round;
+    private GameBoard player1;
+    private GameBoard player2;
 }
