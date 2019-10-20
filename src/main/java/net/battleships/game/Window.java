@@ -23,9 +23,11 @@ public class Window {
     }
 
     private void startup(){
+        //New Frame
         Frame f = new Frame(this.name);
         f.setVisible(true);
         f.setSize(width, heigth);
+        //closes the window if you press on the X
         f.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent we) {
