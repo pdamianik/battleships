@@ -12,4 +12,7 @@ gradle
 
 # Ignore binary output directory
 out
+
 /.idea/
+
+bin
