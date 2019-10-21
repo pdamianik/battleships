@@ -1,18 +1,25 @@
+# Editors/IDEs
+# ============
 # Ignore Idea meta directory
-.idea
+#.idea
+# Ignore VSCode meta directory
+#.vscode
+# Ignore Eclipse meta data files and directorys
+#.classpath
+#.project
+#.settings
 
+# gradle
+# ======
 # Ignore Gradle project-specific cache directory
 .gradle
-
 # Ignore Gradle build output directory
 build
-
 # Ignore Gradle wrapper directory
 gradle
 
-# Ignore binary output directory
+# Default binary output
+# =====================
+# Ignore binary output directorys
 out
-
-/.idea/
-
 bin
