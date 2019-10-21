@@ -24,6 +24,10 @@ public class Ship {
         this.startPoint = startPoint;
     }
 
+    public Point2D getStartPoint() {
+        return startPoint;
+    }
+
     public boolean isAlive() {
         return getHp() <= 0;
     }

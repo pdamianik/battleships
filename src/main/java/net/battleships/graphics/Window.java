@@ -27,35 +27,33 @@ public class Window {
         return frame;
     }
 
-    public Window(String name) throws NoSuchFieldException {
+    public Window(String name){
         this.width = 100;
         this.height = 100;
         this.name = name;
         this.startup();
     }
 
-    public Window(String name, int width, int height) throws NoSuchFieldException {
+    public Window(String name, int width, int height){
         this.width = width;
         this.height = height;
         this.name = name;
         this.startup();
     }
 
-    private void startup() throws NoSuchFieldException {
+    private void startup(){
         //New Frame
         this.frame = new JFrame(this.name);
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         Toolkit xToolkit = Toolkit.getDefaultToolkit();
-        Field awtAppClassNameField = xToolkit.getClass().getDeclaredField("awtAppClassName");
+        Field awtAppClassNameField = null;
         try {
+            awtAppClassNameField = xToolkit.getClass().getDeclaredField("awtAppClassName");
             awtAppClassNameField.setAccessible(true);
-        } catch (SecurityException e) {
-
-        }
-        try {
             awtAppClassNameField.set(xToolkit, this.name);
         } catch (IllegalAccessException e) {
-        }
+        } catch (NullPointerException e) {
+        } catch (NoSuchFieldException e) {}
         frame.setVisible(true);
         frame.setSize(width, height);
         //closes the window if you press on the X, but with a confirmation Dialog, to confirm that the user wants to close it

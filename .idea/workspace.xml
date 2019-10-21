@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" afterDir="false" />
+    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/Point2dTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/WindowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Battleship.bmpr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Game.asta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Ship.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Weapon.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/battleships.asta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/resource.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/graphics/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/graphics/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/game/GameTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +45,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="net.battleships" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="net.battleships" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="net.battleships" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -81,6 +69,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SUAYsTsnhkdHiAZUifWCwiZLzJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -267,6 +258,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.battleships [jar]" />
+      <item itemvalue="Gradle.battleships [run]" />
+      <item itemvalue="Gradle.battleships [javadoc]" />
+      <item itemvalue="Gradle.battleships [clean]" />
+      <item itemvalue="Gradle.battleships [test]" />
+      <item itemvalue="Gradle.battleships [build]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.battleships [clean]" />
