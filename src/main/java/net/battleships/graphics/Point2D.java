@@ -30,7 +30,7 @@ public class Point2D {
         this.y = y;
     }
 
-    public Point2D abstandNull() {
+    public Point2D distanceNull() {
         return this;
     }
 
@@ -38,7 +38,7 @@ public class Point2D {
         return this.x == punkt.x && this.y == punkt.y;
     }
 
-    public Point2D abstand(Point2D punkt) {
+    public Point2D distance(Point2D punkt) {
         return new Point2D(Math.abs(this.x - punkt.getX()), Math.abs(this.y - punkt.getY()));
     }
 }
