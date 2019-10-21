@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/Point2dTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/Point2dTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/game/WeaponTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +57,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -317,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571685943776</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed language to english instead of german&#10;and fixed errors">
+      <created>1571685995752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571685995752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="started own branch">
+      <created>1571686140955</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571686140955</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,6 +360,8 @@
     <MESSAGE value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
     <MESSAGE value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
     <MESSAGE value="changed language to english instead of german" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed language to english instead of german" />
+    <MESSAGE value="changed language to english instead of german&#10;and fixed errors" />
+    <MESSAGE value="started own branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="started own branch" />
   </component>
 </project>
