@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="Change .gitignore&#10;Optimizing project meta&#10;https://github.com/rasphi/battleships/projects/1#card-28032926">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_27_0_1_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" afterDir="false" />
+    <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/atomicBomb.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/example.deck" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/example.deck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/example.ship" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/example.ship" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/example.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/example.weapon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sprayBomb.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/sprayBomb.weapon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Battleship.bmpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Game.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Ship.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Weapon.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/battleships.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/resource.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [jar]">
+  <component name="RunManager" selected="Gradle.battleships [javadoc]">
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,7 +163,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="battleships [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="battleships [javadoc]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -281,7 +271,6 @@
       <list>
         <item itemvalue="Gradle.battleships [clean]" />
         <item itemvalue="Gradle.battleships [build]" />
-        <item itemvalue="Gradle.battleships [javadoc]" />
         <item itemvalue="Gradle.battleships [test]" />
       </list>
     </recent_temporary>
@@ -304,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571676115981</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391">
+      <created>1571681855569</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571681855570</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,6 +318,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change .gitignore&#10;Optimizing project meta&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change .gitignore&#10;Optimizing project meta&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
+    <MESSAGE value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
   </component>
 </project>
