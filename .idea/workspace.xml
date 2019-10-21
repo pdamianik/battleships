@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Battleship.bmpr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Game.asta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Ship.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Weapon.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/battleships.asta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/resource.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [javadoc]">
+  <component name="RunManager" selected="Gradle.battleships [clean]">
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,8 +260,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.battleships [clean]" />
-        <item itemvalue="Gradle.battleships [build]" />
         <item itemvalue="Gradle.battleships [test]" />
+        <item itemvalue="Gradle.battleships [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571681855570</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926">
+      <created>1571682874895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571682874895</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,6 +316,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change .gitignore&#10;Optimizing project meta&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
     <MESSAGE value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
+    <MESSAGE value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
   </component>
 </project>
