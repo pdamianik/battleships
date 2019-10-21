@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/Point2dTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/WindowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/graphics/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/graphics/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/game/GameTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +35,19 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="net.battleships" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -69,9 +71,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SUAYsTsnhkdHiAZUifWCwiZLzJ" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -258,19 +257,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Gradle.battleships [jar]" />
-      <item itemvalue="Gradle.battleships [run]" />
-      <item itemvalue="Gradle.battleships [javadoc]" />
-      <item itemvalue="Gradle.battleships [clean]" />
-      <item itemvalue="Gradle.battleships [test]" />
-      <item itemvalue="Gradle.battleships [build]" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.battleships [clean]" />
-        <item itemvalue="Gradle.battleships [build]" />
         <item itemvalue="Gradle.battleships [test]" />
+        <item itemvalue="Gradle.battleships [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +290,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571681855570</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926">
+      <created>1571682874895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571682874895</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926">
+      <created>1571685414621</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571685414621</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,6 +323,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change .gitignore&#10;Optimizing project meta&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
     <MESSAGE value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
+    <MESSAGE value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
   </component>
 </project>
