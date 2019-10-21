@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/graphics/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/graphics/Point2D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/Point2dTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/graphics/Point2dTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -306,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571685414621</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed language to english instead of german">
+      <created>1571685943776</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571685943776</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,6 +332,7 @@
     <MESSAGE value="Change .gitignore&#10;Optimizing project meta&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
     <MESSAGE value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
     <MESSAGE value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
+    <MESSAGE value="changed language to english instead of german" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed language to english instead of german" />
   </component>
 </project>
