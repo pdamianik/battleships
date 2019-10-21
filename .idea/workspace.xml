@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [javadoc]">
+  <component name="RunManager" selected="Gradle.battleships [jar]">
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -339,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571686316456</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Started dev branch">
+      <created>1571687905390</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571687905390</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,6 +367,7 @@
     <MESSAGE value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
     <MESSAGE value="changed language to english instead of german" />
     <MESSAGE value="Started own branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started own branch" />
+    <MESSAGE value="Started dev branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started dev branch" />
   </component>
 </project>
