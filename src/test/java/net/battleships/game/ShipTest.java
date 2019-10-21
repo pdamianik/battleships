@@ -13,7 +13,7 @@ public class ShipTest {
         int[][] classic = new int[1][2];
         classic[0][0] = 1;
         classic[0][1] = 1;
-        Ship ship = new Ship("test", classic, true);
+        Ship ship = new Ship("test", classic, true, 1);
         assertEquals(2, ship.getHp());
     }
 
@@ -22,7 +22,7 @@ public class ShipTest {
         int[][] classic = new int[1][2];
         classic[0][0] = 1;
         classic[0][1] = 1;
-        Ship ship = new Ship("test", classic, true);
+        Ship ship = new Ship("test", classic, true, 1);
         assertEquals(true, ship.hit(new Point2D(0, 1)));
     }
 

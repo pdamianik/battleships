@@ -9,11 +9,13 @@ public class Ship {
     private int[][] area;
     private Point2D startPoint;
     private boolean alive = true;
+    private int id;
 
-    public Ship(String name, int[][] area, boolean alive) {
+    public Ship(String name, int[][] area, boolean alive, int id) {
         this.name = name;
         this.area = area;
         this.alive = alive;
+        this.id = id;
     }
 
     public int getHp() {

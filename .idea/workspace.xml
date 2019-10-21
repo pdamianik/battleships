@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/ShipFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excluded/Battleship.bmpr" beforeDir="false" afterPath="$PROJECT_DIR$/excluded/Battleship.bmpr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -391,7 +394,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571687181261</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#4&#10;added a test class for this class">
+      <created>1571689640586</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571689640587</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#5&#10;edited the type of array">
+      <created>1571689750186</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571689750186</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,6 +432,8 @@
     <MESSAGE value="changed language to english instead of german&#10;and fixed errors" />
     <MESSAGE value="started own branch" />
     <MESSAGE value="#5&#10;added a test class for this class" />
-    <option name="LAST_COMMIT_MESSAGE" value="#5&#10;added a test class for this class" />
+    <MESSAGE value="#4&#10;added a test class for this class" />
+    <MESSAGE value="#5&#10;edited the type of array" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5&#10;edited the type of array" />
   </component>
 </project>
