@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/event/TestEvent1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/event/TestEvent2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/event/TestHandler1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/event/TestHandler2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/event/TestHandler3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventPriority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/event/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/event/EventTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +55,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [run]">
+  <component name="RunManager" selected="Gradle.battleships [test]">
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -259,10 +269,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.battleships [test]" />
+        <item itemvalue="Gradle.battleships [clean]" />
         <item itemvalue="Gradle.battleships [build]" />
-        <item itemvalue="Gradle.battleships [clean]" />
-        <item itemvalue="Gradle.battleships [test]" />
-        <item itemvalue="Gradle.battleships [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572955162726</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Finished Event Handler">
+      <created>1572956374512</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572956374512</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

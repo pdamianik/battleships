@@ -1,17 +1,16 @@
 package net.battleships.event;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Represents an event handler object to handle events (implements interface Event) with handlers (implements interface Handler)
+ * Represents an event handler object for the whole game to call event handlers (event handlers must implement the interface Handler)
  * @author Philip Damianik
  * @version 2019-11-05
  */
 
 public class EventHandler {
-	private HashMap<Event, HashMap<EventPriority, ArrayList<Handler>>> handlers; // the handlers
+	private HashMap<Class<? extends Event>, HashMap<EventPriority, ArrayList<Handler>>> handlers; // the handlers
 
 	/**
 	 * A constructor without magic; simply initializes the handlers hashmap
@@ -24,12 +23,14 @@ public class EventHandler {
 	/**
 	 * Registers a handler to handle an event with a priority
 	 * @param handler the handler that handles the event
+	 * @param eventClass the event that the handler will be registered for
 	 * @param priority the priority for the handler (lower means later executed)
+	 * @see EventPriority
 	 */
 
-	public void register(Handler handler, EventPriority priority) {
-		if (this.handlers.containsKey(handler.getEvent())) {
-			HashMap<EventPriority, ArrayList<Handler>> priorityHandler = this.handlers.get(handler.getEvent());
+	public void register(Handler handler, Class<? extends Event> eventClass, EventPriority priority) {
+		if (this.handlers.containsKey(eventClass)) {
+			HashMap<EventPriority, ArrayList<Handler>> priorityHandler = this.handlers.get(eventClass);
 			if (priorityHandler.containsKey(priority)) {
 				priorityHandler.get(priority).add(handler);
 			} else {
@@ -38,7 +39,7 @@ public class EventHandler {
 				}});
 			}
 		} else {
-			this.handlers.put(handler.getEvent(), new HashMap<>() {{
+			this.handlers.put(eventClass, new HashMap<>() {{
 				put(priority, new ArrayList<>() {{
 					add(handler);
 				}});
@@ -49,29 +50,37 @@ public class EventHandler {
 	/**
 	 * Registers a handler for an event with medium priority (default)
 	 * @param handler the event handler to handle the event
+	 * @param eventClass the event that the handler will be registered for
 	 */
 
-	public void register(Handler handler) {
-		this.register(handler, EventPriority.MEDIUM);
+	public void register(Handler handler, Class<? extends Event> eventClass) {
+		this.register(handler, eventClass, EventPriority.MEDIUM);
 	}
 
 	/**
 	 * Handles an event
 	 * @param event the event to handle
+	 * @return if the execution was successful
 	 */
 
-	public void handle(Event event) {
-		if (this.handlers.containsKey(event)) {
-			HashMap<EventPriority, ArrayList<Handler>> handlersByPriority = this.handlers.get(event);
-			if (handlersByPriority.containsKey(EventPriority.HIGH))
+	public boolean handle(Event event) {
+		if (this.handlers.containsKey(event.getClass())) {
+			HashMap<EventPriority, ArrayList<Handler>> handlersByPriority = this.handlers.get(event.getClass());
+			boolean handled = false;
+			if (handlersByPriority.containsKey(EventPriority.HIGH)) {
 				for (Handler handler : handlersByPriority.get(EventPriority.HIGH))
-					handler.handle(event);
-			if (handlersByPriority.containsKey(EventPriority.MEDIUM))
+					if (handler.handle(event)) handled = true; else return false;
+			}
+			if (handlersByPriority.containsKey(EventPriority.MEDIUM)) {
 				for (Handler handler : handlersByPriority.get(EventPriority.MEDIUM))
-					handler.handle(event);
-			if (handlersByPriority.containsKey(EventPriority.LOW))
+					if (handler.handle(event)) handled = true; else return false;
+			}
+			if (handlersByPriority.containsKey(EventPriority.LOW)) {
 				for (Handler handler : handlersByPriority.get(EventPriority.LOW))
-					handler.handle(event);
+					if (handler.handle(event)) handled = true; else return false;
+			}
+			return handled;
 		}
+		return false;
 	}
 }
