@@ -1,9 +1,6 @@
 package net.battleships.event;
 
-import java.lang.reflect.Method;
-
-public class Handler {
-	public Handler(Object object, Method method, Event event) {
-
-	}
+public interface Handler {
+	void handle(Event event);
+	Event getEvent();
 }
