@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventPriority.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" afterDir="false" />
     </list>
@@ -341,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572953565643</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished Event Handler">
+      <created>1572955162726</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572955162726</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
