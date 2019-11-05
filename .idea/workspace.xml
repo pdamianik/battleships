@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="Finished Event Handler">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/Eventhandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/Handler.java" afterDir="false" />
-    </list>
+    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571687905390</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished Event Handler">
+      <created>1572953539375</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572953539375</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

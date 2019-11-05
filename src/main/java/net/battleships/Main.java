@@ -15,15 +15,5 @@ public class Main {
 	public static void main(String[] args) {
 		Main thisObject = new Main();
 		System.out.println(thisObject.getGreeting());
-		ArrayList<String> gfg = new ArrayList<String>() {
-			{
-				add("Geeks");
-				add("for");
-				add("Geeks");
-			}
-		};
-
-		// print ArrayList
-		System.out.println("ArrayList : " + gfg);
 	}
 }
