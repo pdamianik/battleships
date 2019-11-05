@@ -5,17 +5,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class EventHandler {
-	private HashMap<Event, HashMap<Integer, ArrayList<Handler>>> handlers;
+	private HashMap<Event, HashMap<EventPriority, ArrayList<Handler>>> handlers;
 
 	public EventHandler() {
 		this.handlers = new HashMap<>();
 	}
 
-	public void register(Handler handler, int priority) throws InvalidParameterException {
-		if (priority < 0 || priority > 2)
-			throw new InvalidParameterException("Wrong handler priority, allowed are 0 (high), 1 (medium), 2 (low)");
+	public void register(Handler handler, EventPriority priority) throws InvalidParameterException {
 		if (this.handlers.containsKey(handler.getEvent())) {
-			HashMap<Integer, ArrayList<Handler>> priorityHandler = this.handlers.get(handler.getEvent());
+			HashMap<EventPriority, ArrayList<Handler>> priorityHandler = this.handlers.get(handler.getEvent());
 			if (priorityHandler.containsKey(priority)) {
 				priorityHandler.get(priority).add(handler);
 			} else {
@@ -33,24 +31,24 @@ public class EventHandler {
 	}
 
 	public void register(Handler handler) {
-		this.register(handler, 1);
+		this.register(handler, EventPriority.MEDIUM);
 	}
 
 	public void handle(Event event) {
 		if (this.handlers.containsKey(event)) {
-			HashMap<Integer, ArrayList<Handler>> handlersByPriority = this.handlers.get(event);
-			if (handlersByPriority.containsKey(0)) {
-				for (Handler handler : handlersByPriority.get(0)) {
+			HashMap<EventPriority, ArrayList<Handler>> handlersByPriority = this.handlers.get(event);
+			if (handlersByPriority.containsKey(EventPriority.HIGH)) {
+				for (Handler handler : handlersByPriority.get(EventPriority.HIGH)) {
 					handler.handle(event);
 				}
 			}
-			if (handlersByPriority.containsKey(1)) {
-				for (Handler handler : handlersByPriority.get(1)) {
+			if (handlersByPriority.containsKey(EventPriority.MEDIUM)) {
+				for (Handler handler : handlersByPriority.get(EventPriority.MEDIUM)) {
 					handler.handle(event);
 				}
 			}
-			if (handlersByPriority.containsKey(2)) {
-				for (Handler handler : handlersByPriority.get(2)) {
+			if (handlersByPriority.containsKey(EventPriority.LOW)) {
+				for (Handler handler : handlersByPriority.get(EventPriority.LOW)) {
 					handler.handle(event);
 				}
 			}
