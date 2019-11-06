@@ -2,6 +2,8 @@ package net.battleships.event;
 
 /**
  * Interface for an in-game event-handler
+ * @author Philip Damianik
+ * @version 2019-11-05
  */
 
 public interface Handler {
