@@ -10,7 +10,10 @@ import java.util.HashMap;
  */
 
 public class EventHandler {
-	private HashMap<Class<? extends Event>, HashMap<EventPriority, ArrayList<Handler>>> handlers; // the handlers
+	/**
+	 * The handlers
+	 */
+	private HashMap<Class<? extends Event>, HashMap<EventPriority, ArrayList<Handler>>> handlers;
 
 	/**
 	 * A constructor without magic; simply initializes the handlers hashmap
