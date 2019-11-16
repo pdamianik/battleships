@@ -3,8 +3,6 @@
  */
 package net.battleships;
 
-import java.util.ArrayList;
-
 public class Main {
 	public String test = "test";
 

@@ -34,8 +34,8 @@ public class Lexer {
 			String line = lines[i];
 			String[] values = line.split(",");
 
-			for (int j = 0; j < values.length; j++) {
-				String value = values[j].replaceAll("\\s+", "");
+			for (String s : values) {
+				String value = s.replaceAll("\\s+", "");
 				if (value.equals(""))
 					value = "0";
 				data.add(new IntegerToken(value));

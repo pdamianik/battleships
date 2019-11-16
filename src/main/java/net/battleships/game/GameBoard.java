@@ -10,7 +10,7 @@ public class GameBoard {
     public GameBoard(int[][] board, ArrayList<Ship> ships, ArrayList<Weapon> weapons) {
         this.board = board;
         this.ships = ships;
-        ArrayList<ArrayList<Integer>> classic = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> classic = new ArrayList<>();
         classic.get(0).add(1);
         Weapon weapon = new Weapon("classic", classic, 1);
         this.weapons = weapons;
