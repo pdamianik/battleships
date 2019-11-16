@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericRootNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/IntegerToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/NewLineToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/TextToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +54,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -373,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573039519093</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed Event Handler, added event system tests and documentation comments">
+      <created>1573041850609</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573041850609</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
