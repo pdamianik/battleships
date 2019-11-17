@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/phida.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/DataToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/EnumerationSeparatorToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/FloatToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericDataToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericSymbolToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/KeyValueSeparatorToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/SymbolToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/VersionToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/WhitespaceToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericRootNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericRootNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/IntegerToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/IntegerToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/NewLineToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/NewLineToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/TextToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/TextToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/battleships/atomicBomb.weapon" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,6 +64,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -417,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573931488422</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Final (hopefully version of the lexer)">
+      <created>1574010971150</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574010971150</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,6 +431,7 @@
     <MESSAGE value="Fixed Event Handler, added event system tests and documentation comments" />
     <MESSAGE value="Added Lexer for .weapon and .ship files incl. junit test" />
     <MESSAGE value="Reviewed Warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reviewed Warnings" />
+    <MESSAGE value="Final (hopefully version of the lexer)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final (hopefully version of the lexer)" />
   </component>
 </project>

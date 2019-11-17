@@ -17,7 +17,7 @@ public class LexerTest {
 		Lexer lexer = new Lexer();
 
 		lexer.addDataToken(new VersionToken());
-		lexer.addDataToken(new FloatToken());
+		//lexer.addDataToken(new FloatToken());
 		lexer.addDataToken(new IntegerToken());
 		lexer.addDataToken(new TextToken());
 		lexer.addDataToken(new GenericDataToken());
