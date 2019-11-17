@@ -1,9 +1,13 @@
 package net.battleships.content.parser.tokens;
 
-public class TextToken extends GenericToken {
+public class TextToken extends GenericDataToken {
+	public TextToken() { super(); }
+
 	public TextToken(String text) {
 		super.setRawContent(text);
 	}
+
+	public TextToken(DataToken token) { super.setRawContent(token.getRawContent()); }
 
 	public String getTextContent() {
 		return super.getRawContent();
@@ -15,6 +19,6 @@ public class TextToken extends GenericToken {
 
 	@Override
 	public String toString() {
-		return "text token: \"" + super.getRawContent() + "\"";
+		return "text: \"" + super.getRawContent() + "\"";
 	}
 }

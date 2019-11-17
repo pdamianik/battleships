@@ -1,6 +1,9 @@
 package net.battleships.content.parser.tokens;
 
-public class IntegerToken extends GenericToken {
+import java.util.regex.Pattern;
+
+public class IntegerToken extends GenericDataToken {
+	private static final Pattern VALID_SYMBOLS = Pattern.compile("-?\\d+");
 	private int integerContent;
 
 	public IntegerToken() {
@@ -16,6 +19,10 @@ public class IntegerToken extends GenericToken {
 	public IntegerToken(String rawContent) throws NumberFormatException {
 		super(rawContent);
 		this.integerContent = Integer.parseInt(rawContent);
+	}
+
+	public Pattern getValidSymbols() {
+		return VALID_SYMBOLS;
 	}
 
 	public void setRawContent(String rawContent) throws NumberFormatException {
@@ -36,12 +43,8 @@ public class IntegerToken extends GenericToken {
 		return new IntegerToken(this.integerContent + token.getIntegerContent());
 	}
 
-	public GenericToken mergeRaw(Token token) {
-		return super.merge(token);
-	}
-
 	@Override
 	public String toString() {
-		return "integer token: " + super.getRawContent();
+		return "integer: " + super.getRawContent();
 	}
 }

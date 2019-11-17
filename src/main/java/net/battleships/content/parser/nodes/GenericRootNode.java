@@ -1,15 +1,15 @@
 package net.battleships.content.parser.nodes;
 
-import net.battleships.content.parser.tokens.Token;
+import net.battleships.content.parser.tokens.DataToken;
 
 import java.util.ArrayList;
 
 public class GenericRootNode implements Node {
 	private ArrayList<Node> childNodes;
-	private Token[] sourceTokens;
+	private DataToken[] sourceDataTokens;
 
-	public GenericRootNode(Token[] sourceTokens) {
-		this.sourceTokens = sourceTokens;
+	public GenericRootNode(DataToken[] sourceDataTokens) {
+		this.sourceDataTokens = sourceDataTokens;
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class GenericRootNode implements Node {
 	}
 
 	@Override
-	public Token[] getSourceTokens() {
-		return this.sourceTokens;
+	public DataToken[] getSourceDataTokens() {
+		return this.sourceDataTokens;
 	}
 }

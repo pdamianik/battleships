@@ -1,18 +1,26 @@
 package net.battleships.content.parser;
 
-import net.battleships.content.parser.tokens.IntegerToken;
-import net.battleships.content.parser.tokens.NewLineToken;
-import net.battleships.content.parser.tokens.TextToken;
-import net.battleships.content.parser.tokens.Token;
+import net.battleships.content.parser.tokens.*;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Lexer {
 	private HashMap<String, ArrayList<Token>> cachedData;
+	private ArrayList<GenericDataToken> tokens = new ArrayList<>() {};
+	private ArrayList<SymbolToken> separatorTokens = new ArrayList<>();
 
 	public Lexer() {
 		this.cachedData = new HashMap<>();
+	}
+
+	public void addDataToken(GenericDataToken dataToken) {
+		this.tokens.add(dataToken);
+	}
+
+	public void addSeparatorToken(SymbolToken symbolToken) {
+		this.separatorTokens.add(symbolToken);
 	}
 
 	public ArrayList<Token> parse(String rawData) throws IllegalArgumentException {
@@ -20,28 +28,47 @@ public class Lexer {
 			return this.cachedData.get(rawData);
 
 		ArrayList<Token> data = new ArrayList<>();
-		String[] lines = rawData.split("\\n");
-		int lineCount = lines.length;
+		String tmpString = "";
+		boolean found;
 
-		if (lineCount < 2) {
-			throw new IllegalArgumentException("A weapon or a ship file needs at least 2 lines: 1 line for the name and 1 line for the damage/health pattern");
-		}
-
-		data.add(new TextToken(lines[0]));
-		data.add(new NewLineToken());
-
-		for (int i = 1; i < lineCount; i++) {
-			String line = lines[i];
-			String[] values = line.split(",");
-
-			for (String s : values) {
-				String value = s.replaceAll("\\s+", "");
-				if (value.equals(""))
-					value = "0";
-				data.add(new IntegerToken(value));
+		for (char letter : rawData.toCharArray()) {
+			found = false;
+			for (SymbolToken separatorToken : separatorTokens) {
+				if (separatorToken.getValidSymbolsEndPattern().matcher(tmpString+letter).matches()) {
+					found = true;
+					String realData = tmpString.replaceAll(separatorToken.getValidSymbolsEndPattern().pattern(), "");
+					for (Token token : tokens)
+						if (token.getValidSymbols().matcher(realData).matches()) {
+							try {
+								data.add(token.getClass().getConstructor(String.class).newInstance(realData));
+							} catch (InstantiationException e) {
+								e.printStackTrace();
+							} catch (IllegalAccessException e) {
+								e.printStackTrace();
+							} catch (NoSuchMethodException e) {
+								e.printStackTrace();
+							} catch (InvocationTargetException e) {
+								e.printStackTrace();
+							}
+							break;
+						}
+					try {
+						data.add(separatorToken.getClass().getConstructor(String.class).newInstance(tmpString+letter));
+					} catch (InstantiationException e) {
+						e.printStackTrace();
+					} catch (IllegalAccessException e) {
+						e.printStackTrace();
+					} catch (InvocationTargetException e) {
+						e.printStackTrace();
+					} catch (NoSuchMethodException e) {
+						e.printStackTrace();
+					}
+					tmpString = "";
+					break;
+				}
 			}
-
-			data.add(new NewLineToken());
+			if (!found)
+				tmpString += letter;
 		}
 
 		this.cachedData.put(rawData, data);

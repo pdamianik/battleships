@@ -1,9 +1,9 @@
 package net.battleships.content.parser.nodes;
 
-import net.battleships.content.parser.tokens.Token;
+import net.battleships.content.parser.tokens.DataToken;
 
 public interface Node {
 	Node[] getChildNodes();
 	void addChild(Node node);
-	Token[] getSourceTokens();
+	DataToken[] getSourceDataTokens();
 }

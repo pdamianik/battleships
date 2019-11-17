@@ -1,23 +1,38 @@
 package net.battleships.content.parser.tokens;
 
-public class NewLineToken implements Token {
-	@Override
-	public String getRawContent() {
-		return "\n";
+import java.util.regex.Pattern;
+
+public class NewLineToken extends GenericSymbolToken {
+	private static final String DEFAULT_SYMBOL = "\n";
+	private static final Pattern VALID_SYMBOLS_END_PATTERN = Pattern.compile(".*(\\n)$");
+	private static final Pattern VALID_SYMBOLS = Pattern.compile("\\n");
+	private static final String SYMBOL_DESCRIPTION = "new line";
+
+	public NewLineToken() {
+
+	}
+
+	public NewLineToken(String symbol) {
+
 	}
 
 	@Override
-	public Token merge(Token token) {
-		return new TextToken(token.getRawContent() + "\n");
+	public Pattern getValidSymbolsEndPattern() {
+		return VALID_SYMBOLS_END_PATTERN;
 	}
 
 	@Override
-	public String toString() {
-		return "new line token";
+	public String getDefaultSymbol() {
+		return DEFAULT_SYMBOL;
 	}
 
 	@Override
-	public boolean equals(Token token) {
-		return "\n".equals(token.getRawContent());
+	public Pattern getValidSymbols() {
+		return VALID_SYMBOLS;
+	}
+
+	@Override
+	public String getSymbolDescription() {
+		return SYMBOL_DESCRIPTION;
 	}
 }
