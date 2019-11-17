@@ -58,47 +58,35 @@ public class Lexer {
 			return this.cachedData.get(rawData);
 
 		ArrayList<Token> data = new ArrayList<>();
-		String tmpString = "";
+		StringBuilder tmpString = new StringBuilder();
 		boolean found;
 
 		for (char letter : rawData.toCharArray()) {
 			found = false;
 			for (SymbolToken separatorToken : separatorTokens) {
-				if (separatorToken.getValidSymbolsEndPattern().matcher(tmpString+letter).matches()) {
+				if (separatorToken.getValidSymbolsEndPattern().matcher(tmpString.toString() +letter).matches()) {
 					found = true;
-					String realData = tmpString.replaceAll(separatorToken.getValidSymbolsEndPattern().pattern(), "");
+					String realData = tmpString.toString().replaceAll(separatorToken.getValidSymbolsEndPattern().pattern(), "");
 					for (Token token : tokens)
 						if (token.getValidSymbols().matcher(realData).matches()) {
 							try {
 								data.add(token.getClass().getConstructor(String.class).newInstance(realData));
-							} catch (InstantiationException e) {
-								e.printStackTrace();
-							} catch (IllegalAccessException e) {
-								e.printStackTrace();
-							} catch (NoSuchMethodException e) {
-								e.printStackTrace();
-							} catch (InvocationTargetException e) {
+							} catch (InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
 								e.printStackTrace();
 							}
 							break;
 						}
 					try {
-						data.add(separatorToken.getClass().getConstructor(String.class).newInstance(tmpString+letter));
-					} catch (InstantiationException e) {
-						e.printStackTrace();
-					} catch (IllegalAccessException e) {
-						e.printStackTrace();
-					} catch (InvocationTargetException e) {
-						e.printStackTrace();
-					} catch (NoSuchMethodException e) {
+						data.add(separatorToken.getClass().getConstructor(String.class).newInstance(tmpString.toString() +letter));
+					} catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
 						e.printStackTrace();
 					}
-					tmpString = "";
+					tmpString = new StringBuilder();
 					break;
 				}
 			}
 			if (!found)
-				tmpString += letter;
+				tmpString.append(letter);
 		}
 
 		this.cachedData.put(rawData, data);
