@@ -51,10 +51,9 @@ public class Window {
             awtAppClassNameField = xToolkit.getClass().getDeclaredField("awtAppClassName");
             awtAppClassNameField.setAccessible(true);
             awtAppClassNameField.set(xToolkit, this.name);
-        } catch (IllegalAccessException e) {
-        } catch (NullPointerException e) {
-        } catch (NoSuchFieldException e) {}
-        frame.setVisible(true);
+        } catch (IllegalAccessException | NoSuchFieldException | NullPointerException e) {
+        }
+		frame.setVisible(true);
         frame.setSize(width, height);
         //closes the window if you press on the X, but with a confirmation Dialog, to confirm that the user wants to close it
         frame.addWindowListener(new WindowAdapter() {

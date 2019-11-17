@@ -40,4 +40,5 @@ jar {
 }
 
 // Define the main class for the application
+//noinspection GroovyUnusedAssignment
 mainClassName = 'net.battleships.Main'
