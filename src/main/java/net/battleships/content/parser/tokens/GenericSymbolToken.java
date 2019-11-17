@@ -16,7 +16,7 @@ public class GenericSymbolToken implements SymbolToken {
 	}
 
 	public GenericSymbolToken(String symbol) {
-		this();
+		this.setSymbol(symbol);
 	}
 
 	@Override

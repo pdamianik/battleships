@@ -70,17 +70,11 @@ public class EventHandler {
 		if (this.handlers.containsKey(event.getClass())) {
 			HashMap<EventPriority, ArrayList<Handler>> handlersByPriority = this.handlers.get(event.getClass());
 			boolean handled = false;
-			if (handlersByPriority.containsKey(EventPriority.HIGH)) {
-				for (Handler handler : handlersByPriority.get(EventPriority.HIGH))
-					if (handler.handle(event)) handled = true; else return false;
-			}
-			if (handlersByPriority.containsKey(EventPriority.MEDIUM)) {
-				for (Handler handler : handlersByPriority.get(EventPriority.MEDIUM))
-					if (handler.handle(event)) handled = true; else return false;
-			}
-			if (handlersByPriority.containsKey(EventPriority.LOW)) {
-				for (Handler handler : handlersByPriority.get(EventPriority.LOW))
-					if (handler.handle(event)) handled = true; else return false;
+			for (EventPriority eventPriority : EventPriority.values()) {
+				if (handlersByPriority.containsKey(eventPriority))
+					for (Handler handler : handlersByPriority.get(eventPriority))
+						if (handler.handle(event)) handled = true;
+						else return false;
 			}
 			return handled;
 		}

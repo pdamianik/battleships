@@ -16,7 +16,7 @@
 # Ignore Gradle build output directory
 build
 # Ignore Gradle wrapper directory
-gradle
+#gradle
 
 # Default binary output
 # =====================
