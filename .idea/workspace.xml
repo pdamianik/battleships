@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericSymbolToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericSymbolToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/event/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -378,7 +373,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574014555319</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updated .gitignore (added gradle wrapper)">
+      <created>1574029990751</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574029990751</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updated .gitignore (added gradle wrapper)">
+      <created>1574030076438</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574030076438</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,6 +414,7 @@
     <MESSAGE value="#4&#10;added a test class for this class" />
     <MESSAGE value="#5&#10;edited the type of array" />
     <MESSAGE value="Removed warnings from Lexer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed warnings from Lexer" />
+    <MESSAGE value="Updated .gitignore (added gradle wrapper)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore (added gradle wrapper)" />
   </component>
 </project>
