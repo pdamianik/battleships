@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/ShipFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" afterDir="false" />
     </list>
@@ -101,7 +102,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [test]">
+  <component name="RunManager" selected="Gradle.ShipTest.testHit">
+    <configuration name="ShipTest.testGetHp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.battleships.game.ShipTest.testGetHp&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ShipTest.testHit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.battleships.game.ShipTest.testHit&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,9 +311,14 @@
       <item itemvalue="Gradle.battleships [clean]" />
       <item itemvalue="Gradle.battleships [test]" />
       <item itemvalue="Gradle.battleships [build]" />
+      <item itemvalue="Gradle.ShipTest.testGetHp" />
+      <item itemvalue="Gradle.ShipTest.testHit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ShipTest.testHit" />
+        <item itemvalue="Gradle.ShipTest.testGetHp" />
+        <item itemvalue="Gradle.battleships [clean]" />
         <item itemvalue="Gradle.battleships [test]" />
         <item itemvalue="Gradle.battleships [clean]" />
         <item itemvalue="Gradle.battleships [build]" />
