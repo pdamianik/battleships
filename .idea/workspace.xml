@@ -4,10 +4,7 @@
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/ShipFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excluded/Battleship.bmpr" beforeDir="false" afterPath="$PROJECT_DIR$/excluded/Battleship.bmpr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,23 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="net.battleships" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -66,13 +80,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -319,7 +330,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="" />
+      <changelist id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="" />
       <created>1571607850780</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -395,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571689750186</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commented the Lexer">
+      <created>1574014446684</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574014446684</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

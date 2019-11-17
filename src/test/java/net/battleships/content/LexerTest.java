@@ -129,6 +129,8 @@ public class LexerTest {
 			}
 		};
 
+		//System.out.println(parsedTestData);
+
 		for (int i = 0; i < expectedTestData.size(); i++) {
 			assertTrue("Lexing failed", expectedTestData.get(i).equals(parsedTestData.get(i)));
 		}
