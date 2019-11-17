@@ -1,9 +1,16 @@
 package net.battleships.event;
 
-import java.lang.reflect.Method;
+/**
+ * Interface for an in-game event-handler
+ * @author Philip Damianik
+ * @version 2019-11-05
+ */
 
-public class Handler {
-	public Handler(Object object, Method method, Event event) {
-
-	}
+public interface Handler {
+	/**
+	 * Used to handle events (is called when an event is fired)
+	 * @param event the object of the event to handle
+	 * @return if the handling was successful
+	 */
+	boolean handle(Event event);
 }
