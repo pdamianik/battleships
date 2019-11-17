@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/ShipFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excluded/Battleship.bmpr" beforeDir="false" afterPath="$PROJECT_DIR$/excluded/Battleship.bmpr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +36,23 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -44,8 +65,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -64,13 +83,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -89,7 +105,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [test]">
+  <component name="RunManager" selected="Gradle.ShipTest.testHit">
+    <configuration name="ShipTest.testGetHp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.battleships.game.ShipTest.testGetHp&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ShipTest.testHit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;net.battleships.game.ShipTest.testHit&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -258,11 +314,15 @@
       <item itemvalue="Gradle.battleships [clean]" />
       <item itemvalue="Gradle.battleships [test]" />
       <item itemvalue="Gradle.battleships [build]" />
+      <item itemvalue="Gradle.ShipTest.testGetHp" />
+      <item itemvalue="Gradle.ShipTest.testHit" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.battleships [test]" />
+        <item itemvalue="Gradle.ShipTest.testHit" />
+        <item itemvalue="Gradle.ShipTest.testGetHp" />
         <item itemvalue="Gradle.battleships [clean]" />
+        <item itemvalue="Gradle.battleships [test]" />
         <item itemvalue="Gradle.battleships [build]" />
       </list>
     </recent_temporary>
@@ -272,7 +332,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="" />
+      <changelist id="c37a2da9-185d-42e0-ad7a-2c5a83474ee3" name="Default Changelist" comment="" />
       <created>1571607850780</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -313,98 +373,42 @@
       <option name="project" value="LOCAL" />
       <updated>1571685943776</updated>
     </task>
-    <task id="LOCAL-00006" summary="Started own branch">
-      <created>1571686316456</created>
+    <task id="LOCAL-00006" summary="changed language to english instead of german&#10;and fixed errors">
+      <created>1571685995752</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1571686316456</updated>
+      <updated>1571685995752</updated>
     </task>
-    <task id="LOCAL-00007" summary="Started dev branch">
-      <created>1571687905390</created>
+    <task id="LOCAL-00007" summary="started own branch">
+      <created>1571686140955</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1571687905390</updated>
+      <updated>1571686140955</updated>
     </task>
-    <task id="LOCAL-00008" summary="Finished Event Handler">
-      <created>1572953539375</created>
+    <task id="LOCAL-00008" summary="#5&#10;added a test class for this class">
+      <created>1571687181261</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1572953539375</updated>
+      <updated>1571687181261</updated>
     </task>
-    <task id="LOCAL-00009" summary="Finished Event Handler">
-      <created>1572953565643</created>
+    <task id="LOCAL-00009" summary="#4&#10;added a test class for this class">
+      <created>1571689640586</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1572953565643</updated>
+      <updated>1571689640587</updated>
     </task>
-    <task id="LOCAL-00010" summary="Finished Event Handler">
-      <created>1572955162726</created>
+    <task id="LOCAL-00010" summary="#5&#10;edited the type of array">
+      <created>1571689750186</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1572955162726</updated>
+      <updated>1571689750186</updated>
     </task>
-    <task id="LOCAL-00011" summary="Finished Event Handler">
-      <created>1572956374512</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1572956374512</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fixed Event Handler, added event system tests and documentation comments">
-      <created>1572979768134</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1572979768134</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fixed Event Handler, added event system tests and documentation comments">
-      <created>1573037744956</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1573037744956</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Fixed Event Handler, added event system tests and documentation comments">
-      <created>1573039519093</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1573039519093</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Fixed Event Handler, added event system tests and documentation comments">
-      <created>1573041850609</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1573041850609</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Added Lexer for .weapon and .ship files incl. junit test">
-      <created>1573931110535</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1573931110536</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Reviewed Warnings">
-      <created>1573931488422</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1573931488422</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Final (hopefully version of the lexer)">
-      <created>1574010971150</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1574010971150</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,13 +429,11 @@
     <MESSAGE value="Added LICENSE file to jar&#10;https://github.com/rasphi/battleships/projects/1#card-28032391" />
     <MESSAGE value="Optimizing project structure&#10;https://github.com/rasphi/battleships/projects/1#card-28032926" />
     <MESSAGE value="changed language to english instead of german" />
-    <MESSAGE value="Started own branch" />
-    <MESSAGE value="Started dev branch" />
-    <MESSAGE value="Finished Event Handler" />
-    <MESSAGE value="Fixed Event Handler, added event system tests and documentation comments" />
-    <MESSAGE value="Added Lexer for .weapon and .ship files incl. junit test" />
-    <MESSAGE value="Reviewed Warnings" />
-    <MESSAGE value="Final (hopefully version of the lexer)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final (hopefully version of the lexer)" />
+    <MESSAGE value="changed language to english instead of german&#10;and fixed errors" />
+    <MESSAGE value="started own branch" />
+    <MESSAGE value="#5&#10;added a test class for this class" />
+    <MESSAGE value="#4&#10;added a test class for this class" />
+    <MESSAGE value="#5&#10;edited the type of array" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5&#10;edited the type of array" />
   </component>
 </project>

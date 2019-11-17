@@ -6,23 +6,53 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * A dynamic lexer for the used for the .ship and .weapon files
+ */
+
 public class Lexer {
+	/**
+	 * A simple Hashmap cache for the parsed data
+	 */
 	private HashMap<String, ArrayList<Token>> cachedData;
+	/**
+	 * These data tokens will be used in the parsing process
+	 */
 	private ArrayList<GenericDataToken> tokens = new ArrayList<>() {};
+	/**
+	 * These data separator tokens will be used in the parsing process
+	 */
 	private ArrayList<SymbolToken> separatorTokens = new ArrayList<>();
 
+	/**
+	 * A constructor that simply initializes the cache
+	 */
 	public Lexer() {
 		this.cachedData = new HashMap<>();
 	}
 
+	/**
+	 * With this method you can add a data token which will be used in the parsing process
+	 * @param dataToken the data token to add
+	 */
 	public void addDataToken(GenericDataToken dataToken) {
 		this.tokens.add(dataToken);
 	}
 
+	/**
+	 * With this method you can add a data separator token which will be used in the parsing process
+	 * @param symbolToken the data separator token to add
+	 */
 	public void addSeparatorToken(SymbolToken symbolToken) {
 		this.separatorTokens.add(symbolToken);
 	}
 
+	/**
+	 * The parsing method which uses the data tokens and the data separator tokens to identify specific parts of the raw data input string
+	 * @param rawData the input string which will be parsed according to the data tokens and the data separator tokens
+	 * @return a ArrayList with the parsed tokens
+	 * @throws IllegalArgumentException will be thrown when a token ins't working correctly
+	 */
 	public ArrayList<Token> parse(String rawData) throws IllegalArgumentException {
 		if (this.cachedData.containsKey(rawData))
 			return this.cachedData.get(rawData);

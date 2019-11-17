@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Weapon {
     private String name;
-    private ArrayList<ArrayList<Integer>> area= new ArrayList<>();
+    private int[][] area;
     private int cooldown;
 
-    public Weapon (String name, ArrayList<ArrayList<Integer>> area, int cooldown){
+    public Weapon (String name, int[][] area, int cooldown){
         this.name = name;
-        this.area = new ArrayList<>(area);
+        this.area = area;
         this.cooldown = cooldown;
     }
 }

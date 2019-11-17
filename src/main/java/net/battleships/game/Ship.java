@@ -2,22 +2,41 @@ package net.battleships.game;
 
 import net.battleships.graphics.Point2D;
 
+import java.util.ArrayList;
+
 public class Ship {
     private String name;
     private int[][] area;
     private Point2D startPoint;
+    private boolean alive = true;
+    private int id;
 
-    public Ship(String name, int[][] area) {
+    public Ship(String name, int[][] area, boolean alive, int id) {
         this.name = name;
         this.area = area;
+        this.alive = alive;
+        this.id = id;
     }
 
     public int getHp() {
-        return -1;
+        int sum = 0;
+        for(int i = 0; i < area.length; i++) {
+            for(int j = 0; j < area[i].length; j++) {
+                sum += area[i][j];
+            }
+        }
+        return sum;
     }
 
     public boolean hit(Point2D point) {
-        return true;
+        if(area[point.getX()][point.getY()] > 0) {
+            area[point.getX()][point.getY()] -= 1;
+            if (getHp()<=0) {
+                this.alive = false;
+            }
+            return true;
+        }
+        return false;
     }
 
     public void setStartPoint(Point2D startPoint) {
@@ -28,7 +47,7 @@ public class Ship {
         return startPoint;
     }
 
-    public boolean isAlive() {
-        return getHp() <= 0;
+    public boolean getAlive() {
+        return this.alive;
     }
 }
