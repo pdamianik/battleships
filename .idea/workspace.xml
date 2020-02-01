@@ -4,7 +4,7 @@
     <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="Added ContentLoader.java v1.0">
+    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="Fixing github testing workflow">
       <change afterPath="$PROJECT_DIR$/doc/allclasses-index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doc/allclasses.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/doc/allpackages-index.html" afterDir="false" />
@@ -620,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580565214798</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fixing github testing workflow">
+      <created>1580565651050</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1580565651050</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -650,7 +657,8 @@
     <MESSAGE value="Removed warnings from Lexer" />
     <MESSAGE value="Updated .gitignore (added gradle wrapper)" />
     <MESSAGE value="Added ContentLoader.java v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ContentLoader.java v1.0" />
+    <MESSAGE value="Fixing github testing workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing github testing workflow" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="70" key="#Groovy" timestamp="1575363442957">
@@ -674,10 +682,10 @@
     </state>
     <state x="501" y="127" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580418879393" />
     <state x="501" y="127" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1580393442414" />
-    <state x="341" y="8" key="CommitChangelistDialog2" timestamp="1580565212633">
+    <state x="341" y="8" key="CommitChangelistDialog2" timestamp="1580565649700">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="341" y="8" key="CommitChangelistDialog2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580565212633" />
+    <state x="341" y="8" key="CommitChangelistDialog2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580565649700" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1580393279980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -715,10 +723,10 @@
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1579630359217" />
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580467231439" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1580565217402">
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1580565716580">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580565217402" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580565716580" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580563320977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
