@@ -3,6 +3,11 @@
  */
 package net.battleships;
 
+import net.battleships.content.ContentLoader;
+import net.battleships.graphics.Window;
+
+import java.nio.file.AccessDeniedException;
+
 public class Main {
 	public String test = "test";
 
@@ -11,6 +16,11 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
+		try {
+			ContentLoader contentLoader = new ContentLoader(ContentLoader.getOSType());
+		} catch (AccessDeniedException e) {
+			e.printStackTrace();
+		}
 		Main thisObject = new Main();
 		System.out.println(thisObject.getGreeting());
 	}

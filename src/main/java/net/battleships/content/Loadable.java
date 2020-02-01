@@ -1,12 +1,25 @@
 package net.battleships.content;
 
-//public class Loadable<T extends Gameobject> {
-public class Loadable<T> {
-	public Loadable(Class<T> loadableClass) {
+import java.io.File;
 
+public class Loadable {
+	private File srcFile;
+	private ContentLoader contentLoader;
+	Loadable(File srcFile, ContentLoader contentLoader) {
+		this.srcFile = srcFile;
+		this.contentLoader = contentLoader;
+	}
+	public String getName() {
+		return "";
+	}
+	public String getAuthor() {
+		return "";
+	}
+	public String getVersion() {
+		return "";
 	}
 
-	/*public Loadable(T loadableObject) {
-		this(loadableObject.getClass());
-	}*/
+	public Factory load() {
+		return null;
+	}
 }

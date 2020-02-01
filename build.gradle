@@ -7,36 +7,39 @@
  */
 
 plugins {
-    // Apply the java plugin to add support for Java
-    id 'java'
+	// Apply the java plugin to add support for Java
+	id 'java'
 
-    // Apply the application plugin to add support for building an application
-    id 'application'
+	// Apply the application plugin to add support for building an application
+	id 'application'
 }
 
 repositories {
-    // Use jcenter for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+	// Use jcenter for resolving your dependencies.
+	// You can declare any Maven/Ivy/file repository here.
+	jcenter()
 }
 
 dependencies {
-    // This dependency is found on compile classpath of this component and consumers.
-    //implementation 'com.google.guava:guava:27.0.1-jre'
+	// This dependency is found on compile classpath of this component and consumers.
+	//implementation 'com.google.guava:guava:27.0.1-jre'
+	//compile 'com.google.code.gson:gson:2.8.6'
 
-    // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+	// Use JUnit test framework
+	testImplementation 'junit:junit:4.12'
+
+	compile 'org.json:json:20190722'
 }
 
 jar {
-    from 'LICENSE'
-    manifest {
-        attributes 'Implementation-Title': 'Battleships Jar Build',
-                'Implementation-Version': '0.1',
-                'Main-Class': 'net.battleships.Main'
-    }
-    archiveBaseName.set('Battleships')
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	from 'LICENSE'
+	manifest {
+		attributes 'Implementation-Title': 'Battleships Jar Build',
+				'Implementation-Version': '0.1',
+				'Main-Class': 'net.battleships.Main'
+	}
+	archiveBaseName.set('Battleships')
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
 // Define the main class for the application
