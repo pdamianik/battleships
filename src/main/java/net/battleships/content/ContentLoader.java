@@ -1,8 +1,13 @@
 package net.battleships.content;
 
 import net.battleships.OSType;
+import net.battleships.datatypes.exceptions.NoAssetResourceException;
+import net.battleships.game.AssetResource;
+import net.battleships.game.Ship;
+import net.battleships.game.Weapon;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.nio.file.AccessDeniedException;
 import java.util.*;
 import java.util.function.Consumer;
@@ -11,7 +16,7 @@ import java.util.function.Consumer;
  * Manages content files (like .ships or .weapon files)
  * before they are loaded
  * @author Philip Damianik
- * @version 2020-01-30
+ * @version 2020-02-01
  */
 
 public class ContentLoader {
@@ -22,7 +27,7 @@ public class ContentLoader {
 	private File localFolder;
 	private File resourceFolder;
 	private ContentWatcher resourceFolderWatchService;
-	private List<Loadable> resourceFiles = new ArrayList<>();
+	private List<Factory<? extends AssetResource>> resourceFiles = new ArrayList<>();
 
 	/**
 	 * Identifies the OS and then locates the resource folder
@@ -154,11 +159,28 @@ public class ContentLoader {
 			throw new IllegalArgumentException("The path passed as an argument isn't a directory");
 
 		// index folder
-		for (File file : Objects.requireNonNull(this.resourceFolder.listFiles((dir, name) -> name.endsWith(".ship") || name.endsWith(".weapon"))))
-			if (file.getName().endsWith(".ship"))
-				this.resourceFiles.add(new ShipLoadable(file, this));
-			else
-				this.resourceFiles.add(new WeaponLoadable(file, this));
+		for (File file : Objects.requireNonNull(this.resourceFolder.listFiles((dir, name) -> name.endsWith(".ship") || name.endsWith(".weapon")))) {
+			try {
+				index(file);
+			} catch (NoAssetResourceException | FileNotFoundException ignored){}
+		}
+	}
+
+	/**
+	 * Indexes a newly added file to the resources
+	 * @param fileToIndex the file to index
+	 * @throws NoAssetResourceException will be thrown if the
+	 * passed file couldn't be parsed as an resource file
+	 * @throws FileNotFoundException will be thrown if the
+	 * passed file doesn't exist or the passed file is a directory
+	 */
+	void index(File fileToIndex) throws FileNotFoundException, NoAssetResourceException {
+		if (fileToIndex.isDirectory() || !fileToIndex.exists())
+			throw new FileNotFoundException("The passed file is a directory or couldn't be found.");
+		if (fileToIndex.getName().endsWith(".ship"))
+			this.resourceFiles.add(new Factory<Weapon>(fileToIndex));
+		else if (fileToIndex.getName().endsWith(".weapon"))
+			this.resourceFiles.add(new Factory<Ship>(fileToIndex));
 	}
 
 	/**
@@ -176,61 +198,28 @@ public class ContentLoader {
 		return OSType.OTHER;
 	}
 
+	public File getLocalFolder() {
+		return new File(localFolder.getAbsolutePath());
+	}
+
+	public File getResourceFolder() {
+		return new File(resourceFolder.getAbsolutePath());
+	}
+
 	/**
 	 * Lists all .weapon and .ship files that have been indexed
 	 * from the resource folder
 	 * @return an ArrayList containing the loadables from the
 	 * resource folder
 	 */
-	public List<Loadable> listAvailable() {
+	public List<Factory<? extends AssetResource>> listAvailable() {
 		return new ArrayList<>(this.resourceFiles);
-	}
-
-	/**
-	 * Loads all the indexed resource files into factories
-	 * @return an array containing all factories
-	 */
-	public Factory[] loadAll() {
-		List<Factory> resultingFactories = new ArrayList<>();
-		this.resourceFiles.forEach((Loadable loadable) -> resultingFactories.add(loadable.load()));
-		this.resourceFiles.clear();
-		return (Factory[]) resultingFactories.toArray();
-	}
-
-	/**
-	 * Loads exactly one item by it's index
-	 * @param index the index of the item to load
-	 * @return the Factory of the loaded resource
-	 */
-	public Factory load(int index) {
-		return this.resourceFiles.get(index).load();
-	}
-
-	/**
-	 * Loads the resources passed as an collection
-	 * @param loadablesToLoad the loadables
-	 * @return the loaded Factories from the passed Loadables
-	 */
-	public static Factory[] load(Collection<Loadable> loadablesToLoad) {
-		ArrayList<Factory> loadedItems = new ArrayList<>();
-		loadablesToLoad.forEach((Loadable toLoad) -> loadedItems.add(toLoad.load()));
-		return (Factory[]) loadedItems.toArray();
-	}
-
-	/**
-	 * Loads the passed Loadable
-	 * @param toLoad the Loadable to load
-	 * @return the resulting factory from the loaded
-	 * Loadable
-	 */
-	public static Factory load(Loadable toLoad) {
-		return toLoad.load();
 	}
 
 	/**
 	 * @return the count of indexed resource files
 	 */
-	public int size() {
+	public int count() {
 		return this.resourceFiles.size();
 	}
 
@@ -239,7 +228,7 @@ public class ContentLoader {
 	 * if no files could be found in the local resource
 	 * folder
 	 */
-	public boolean isEmpty() {
+	public boolean noIndexedFiles() {
 		return this.resourceFiles.isEmpty();
 	}
 
@@ -247,7 +236,7 @@ public class ContentLoader {
 	 * @return an iterator for the indexed local resource
 	 * files
 	 */
-	public Iterator<Loadable> iterator() {
+	public Iterator<Factory<? extends AssetResource>> iterator() {
 		return this.resourceFiles.iterator();
 	}
 
@@ -255,8 +244,8 @@ public class ContentLoader {
 	 * @return the array representation of the indexed
 	 * local resource files
 	 */
-	public Loadable[] toArray() {
-		return (Loadable[]) this.resourceFiles.toArray();
+	public Factory<? extends AssetResource>[] toArray() {
+		return (Factory<? extends AssetResource>[]) this.resourceFiles.toArray();
 	}
 
 	/**
@@ -264,7 +253,7 @@ public class ContentLoader {
 	 * @param index the index of the Loadable of interest
 	 * @return the Loadable at the index
 	 */
-	public Loadable get(int index) {
+	public Factory<? extends AssetResource> get(int index) {
 		return this.resourceFiles.get(index);
 	}
 
@@ -272,7 +261,7 @@ public class ContentLoader {
 	 * Performs an action on every indexed file
 	 * @param consumer the action to perform
 	 */
-	public void forEach(Consumer<? super Loadable> consumer) {
+	public void forEach(Consumer<? super Factory<? extends AssetResource>> consumer) {
 		this.resourceFiles.forEach(consumer);
 	}
 }

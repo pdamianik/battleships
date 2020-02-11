@@ -1,12 +1,8 @@
-{
-    name: "atomic bomb",
-    author: "built-in",
-    version: "v1.0",
-    damage pattern:
-    [
-        [ , 1, 1,  ,],
-        [1, 2, 2, 1,],
-        [1, 2, 2, 1,],
-        [ , 1, 1,  ,]
-    ]
-}
+name: atomic bomb
+author: built-in
+version: v1.0
+damage pattern:
+ , 1, 1,  ,
+1, 2, 2, 1,
+1, 2, 2, 1,
+ , 1, 1,  ,

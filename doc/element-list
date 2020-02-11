@@ -1,0 +1,10 @@
+net.battleships
+net.battleships.content
+net.battleships.content.parser
+net.battleships.content.parser.nodes
+net.battleships.content.parser.tokens
+net.battleships.event
+net.battleships.game
+net.battleships.graphics
+net.battleships.network.client
+net.battleships.network.server

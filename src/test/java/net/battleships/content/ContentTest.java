@@ -39,7 +39,7 @@ public class ContentTest {
 		if (savedData.length() == extractedData.length())
 			for (int i = 0; i < savedData.length(); i++) {
 				if (savedData.charAt(i) != extractedData.charAt(i))
-					System.out.println("\"" + savedData.charAt(i) + "\" vs \"" + extractedData.charAt(i) + "\"" + " @ index: " + i);
+					System.out.println("\"" + savedData.charAt(i) + "\" vs \"" + extractedData.charAt(i) + "\"" + " @ " + i);
 			}
 		else
 			System.out.println(savedData.length() + " vs " + extractedData.length());

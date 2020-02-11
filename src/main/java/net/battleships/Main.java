@@ -4,7 +4,6 @@
 package net.battleships;
 
 import net.battleships.content.ContentLoader;
-import net.battleships.graphics.Window;
 
 import java.nio.file.AccessDeniedException;
 

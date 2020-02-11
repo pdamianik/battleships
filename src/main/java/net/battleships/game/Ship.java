@@ -2,20 +2,20 @@ package net.battleships.game;
 
 import net.battleships.graphics.Point2D;
 
-import java.util.ArrayList;
-
-public class Ship {
+public class Ship implements AssetResource {
     private String name;
     private int[][] area;
     private Point2D startPoint;
     private boolean alive = true;
     private int id;
+    private int resourceId;
 
-    public Ship(String name, int[][] area, boolean alive, int id) {
+    public Ship(String name, int[][] area, boolean alive, int id, int resourceId) {
         this.name = name;
         this.area = area;
         this.alive = alive;
         this.id = id;
+        this.resourceId = resourceId;
     }
 
     public int getHp() {
@@ -49,5 +49,20 @@ public class Ship {
 
     public boolean getAlive() {
         return this.alive;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public int getResourceId() {
+        return this.resourceId;
+    }
+
+    @Override
+    public int getId() {
+        return this.id;
     }
 }
