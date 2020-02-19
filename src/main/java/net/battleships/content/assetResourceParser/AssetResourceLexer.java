@@ -49,7 +49,7 @@ class AssetResourceLexer {
 		// tmp String to search for tokens
 		StringBuilder tmpString = new StringBuilder();
 
-		for (int i = 0; i < rawData.length();) {
+		for (int i = 0; i < rawData.length(); i++) {
 			char letter = rawData.charAt(i);
 			tmpString.append(letter);
 			for (Token token : previouslyMatchingToken)
@@ -57,10 +57,10 @@ class AssetResourceLexer {
 					matchingToken.add(token);
 
 			if (matchingToken.size() < 2) {
-				if (previouslyMatchingToken.size() == 2)
+				if (previouslyMatchingToken.size() > 1)
 					data.add(previouslyMatchingToken.get(1).tokenWithData(tmpString.substring(0, tmpString.length()-1)));
 				else
-					data.add(this.tokens.get(0).tokenWithData(tmpString.substring(0, tmpString.length()-1)));
+					data.add(previouslyMatchingToken.get(0).tokenWithData(tmpString.substring(0, tmpString.length()-1)));
 				tmpString = new StringBuilder(letter+"");
 				previouslyMatchingToken.clear();
 				for (Token token : this.tokens)
@@ -69,11 +69,10 @@ class AssetResourceLexer {
 			} else {
 				previouslyMatchingToken = new ArrayList<>(matchingToken);
 			}
-			i++;
 			matchingToken.clear();
 		}
 
-		if (previouslyMatchingToken.size() == 2)
+		if (previouslyMatchingToken.size() > 1)
 			data.add(previouslyMatchingToken.get(1).tokenWithData(tmpString.toString()));
 		else
 			data.add(this.tokens.get(0).tokenWithData(tmpString.toString()));

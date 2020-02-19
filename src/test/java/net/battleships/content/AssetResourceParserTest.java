@@ -1,143 +1,47 @@
 package net.battleships.content;
 
+import net.battleships.content.assetResourceParser.AssetData;
 import net.battleships.content.assetResourceParser.AssetResourceParser;
 import net.battleships.content.assetResourceParser.tokens.*;
+import net.battleships.datatypes.exceptions.InvalidKeyException;
+import net.battleships.datatypes.exceptions.KeyAlreadyExistsException;
+import net.battleships.datatypes.exceptions.MissingDataException;
 import org.junit.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
 public class AssetResourceParserTest {
-	private ArrayList<Token> expectedTestData = new ArrayList<>() {
-		{
-			add(new TextToken("name"));
-			add(new KeyValueSeparatorToken(":"));
-			add(new WhitespaceToken(" "));
-			add(new TextToken("atomic bomb"));
-			add(new NewLineToken("\n"));
-			add(new TextToken("author"));
-			add(new KeyValueSeparatorToken(":"));
-			add(new WhitespaceToken(" "));
-			add(new TextToken("built-in"));
-			add(new NewLineToken("\n"));
-			add(new TextToken("version"));
-			add(new KeyValueSeparatorToken(":"));
-			add(new WhitespaceToken(" "));
-			add(new TextToken("v"));
-			add(new DecimalToken("1.0"));
-			add(new NewLineToken("\n"));
-			add(new TextToken("health pattern"));
-			add(new KeyValueSeparatorToken(":"));
-			add(new NewLineToken("\n"));
-			add(new WhitespaceToken(" "));
-			add(new WhitespaceToken(" "));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new WhitespaceToken(" "));
-			add(new EnumerationSeparatorToken(","));
-			add(new NewLineToken("\n"));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(2));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(2));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new NewLineToken("\n"));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(2));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(2));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new NewLineToken("\n"));
-			add(new WhitespaceToken(" "));
-			add(new WhitespaceToken(" "));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new IntegerToken(1));
-			add(new EnumerationSeparatorToken(","));
-			add(new WhitespaceToken(" "));
-			add(new WhitespaceToken(" "));
-			add(new EnumerationSeparatorToken(","));
-			add(new NewLineToken("\n"));
-			add(new TextToken("test"));
-			add(new KeyValueSeparatorToken(":"));
-			add(new WhitespaceToken(" "));
-			add(new TextToken("hello world"));
-		}
-	};
-
-	/*
-	/**
-	 * A test for the intern lexer
-	 *//*
 	@Test
-	public void lexerTest() {
-		AssetResourceLexer assetResourceLexer = new AssetResourceLexer();
-
-		String testData = "name: atomic bomb\n" +
+	public void parserTest() {
+		AssetResourceParser assetResourceParser = new AssetResourceParser();
+		String testData1 = "name: atomic bomb\n" +
 				"author: built-in\n" +
 				"version: v1.0\n" +
 				"health pattern:\n" +
 				"  , 1, 1,  ,\n" +
 				" 1, 2, 2, 1,\n" +
 				" 1, 2, 2, 1,\n" +
-				"  , 1, 1,  ,\n" +
-				"test: hello world";
-
-		// parsing (inclusive time tracking, for the caching system)
-		/*
-		long startTime = System.nanoTime();
-		*//*
-		ArrayList<Token> parsedTestData = assetResourceLexer.parse(testData);
-		*//*
-		long endTime = System.nanoTime();
-		System.out.println("Execution Time: " + (endTime - startTime));
-		System.out.println("Execution time in milliseconds : " + ((endTime - startTime) / 1000000.0));
-
-		startTime = System.nanoTime();
-		assetResourceLexer.parse(testData);
-		endTime = System.nanoTime();
-		System.out.println("Execution Time: " + (endTime - startTime));
-		System.out.println("Execution time in milliseconds : " + ((endTime - startTime) / 1000000.0));
-		*//*
-
-		for (int i = 0; i < this.expectedTestData.size(); i++) {
-			assertTrue("Lexing failed: " + this.expectedTestData.get(i) + " vs " + parsedTestData.get(i), this.expectedTestData.get(i).equals(parsedTestData.get(i)));
+				"  , 1, 1,  ,";
+		String testData2 = "name: example\n" +
+				"damage pattern:  ,-1,-1,-1,  ,\n" +
+				"-1, 1, 1, 1,-1,\n" +
+				"  ,-1,-1,-1,  ,";
+		assertEquals("Equals test with minimal data", new AssetData("example", new int[][] {{0,-1,-1,-1,0}, {-1,1,1,1,-1}, {0,-1,-1,-1,0}}), new AssetData("example", new int[][] {{0,-1,-1,-1,0}, {-1,1,1,1,-1}, {0,-1,-1,-1,0}}));
+		assertEquals("Equals test with maximal data", new AssetData("atomic bomb", "built-in", 1.0d, new int[][]{{0, 1, 1, 0}, {1, 2, 2, 1}, {1, 2, 2, 1}, {0, 1, 1, 0}}), new AssetData("atomic bomb", "built-in", 1.0d, new int[][]{{0, 1, 1, 0}, {1, 2, 2, 1}, {1, 2, 2, 1}, {0, 1, 1, 0}}));
+		try {
+			assertEquals("Parsing test with minimal data", new AssetData("example", new int[][] {{0,-1,-1,-1,0}, {-1,1,1,1,-1}, {0,-1,-1,-1,0}}), assetResourceParser.parse(testData2));
+		} catch (InvalidKeyException | KeyAlreadyExistsException | MissingDataException e) {
+			e.printStackTrace();
 		}
-	}
-	*/
-
-	@Test
-	public void parserTest() {
-		AssetResourceParser assetResourceParser = new AssetResourceParser();
+		try {
+			assertEquals("Parser test with maximal data", new AssetData("atomic bomb", "built-in", 1.0d, new int[][]{{0, 1, 1, 0}, {1, 2, 2, 1}, {1, 2, 2, 1}, {0, 1, 1, 0}}), assetResourceParser.parse(testData1));
+		} catch (InvalidKeyException | KeyAlreadyExistsException | MissingDataException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Test
 	public void TokenTest() {
-		KeyValueSeparatorToken keyValueSeparatorToken = new KeyValueSeparatorToken(":");
 		TextToken textToken1 = new TextToken("name");
 		TextToken textToken2 = new TextToken("name");
 		TextToken textToken3 = new TextToken("bla");

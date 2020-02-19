@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class IntegerToken implements NumericToken {
 	private String rawData;
 	private int numericValue;
-	private static final Pattern isIntegerPattern = Pattern.compile("[+\\-]?\\d+");
+	private static final Pattern isIntegerPattern = Pattern.compile("(?:[+\\-]\\d)|\\d+|[+\\\\-]");
 
 	public IntegerToken() {
 

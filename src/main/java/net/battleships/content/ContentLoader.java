@@ -1,5 +1,6 @@
 package net.battleships.content;
 
+import net.battleships.EnvironmentData;
 import net.battleships.OSType;
 import net.battleships.datatypes.exceptions.NoAssetResourceException;
 import net.battleships.game.AssetResource;
@@ -20,10 +21,7 @@ import java.util.function.Consumer;
  */
 
 public class ContentLoader {
-	private static final String OS = System.getProperty("os.name").toUpperCase();
-	private static final String USER_HOME_FOLDER = System.getProperty("user.home");
 	private static final String DEFAULT_RESOURCE_SUBFOLDER_PATH = "data";
-	private static final File RUNNING_FOLDER = new File(".");
 	private File localFolder;
 	private File resourceFolder;
 	private ContentWatcher resourceFolderWatchService;
@@ -50,7 +48,7 @@ public class ContentLoader {
 	 * folder couldn't be created
 	 */
 	public ContentLoader() throws AccessDeniedException {
-		this(DEFAULT_RESOURCE_SUBFOLDER_PATH, getOSType());
+		this(DEFAULT_RESOURCE_SUBFOLDER_PATH, EnvironmentData.getOSType());
 	}
 
 	/**
@@ -97,7 +95,7 @@ public class ContentLoader {
 	 * folder couldn't be created
 	 */
 	public ContentLoader(String path) throws AccessDeniedException {
-		this(path, getOSType());
+		this(path, EnvironmentData.getOSType());
 	}
 
 	/**
@@ -128,13 +126,13 @@ public class ContentLoader {
 			this.localFolder = new File(System.getenv("AppData") + "\\battleships");
 		else if (osType == OSType.MAC)
 			// MAC OS -> Paths/separated/by/slashes/, local folder: ~/Library/Application Support/
-			this.localFolder = new File(USER_HOME_FOLDER + "/Library/Application Support/battleships");
+			this.localFolder = new File(EnvironmentData.USER_HOME_FOLDER + "/Library/Application Support/battleships");
 		else if (osType == OSType.LINUX)
 			// Linux -> Paths/separated/by/slashes, local folder: ~/.local/share/
-			this.localFolder = new File(USER_HOME_FOLDER + "/.local/share/battleships");
+			this.localFolder = new File(EnvironmentData.USER_HOME_FOLDER + "/.local/share/battleships");
 		else
 			// Unknown -> Paths/\\separated/\\by/\\unknown/\\separators/\\, local folder: ./
-			this.localFolder = new File(RUNNING_FOLDER.getAbsolutePath() + File.separator + "battleships");
+			this.localFolder = new File(EnvironmentData.RUNNING_FOLDER.getAbsolutePath() + File.separator + "battleships");
 
 		// Get resource folder inside of the local folder
 		this.resourceFolder = new File(this.localFolder.getAbsolutePath() + File.separator + path);
@@ -181,21 +179,6 @@ public class ContentLoader {
 			this.resourceFiles.add(new Factory<Weapon>(fileToIndex));
 		else if (fileToIndex.getName().endsWith(".weapon"))
 			this.resourceFiles.add(new Factory<Ship>(fileToIndex));
-	}
-
-	/**
-	 * Tries to detect the OS type of the system this program is running on
-	 * @see net.battleships.OSType
-	 * @return the OS type
-	 */
-	public static OSType getOSType() {
-		if (OS.contains("WIN"))
-			return OSType.WINDOWS;
-		else if (OS.contains("MAC"))
-			return OSType.MAC;
-		else if (OS.contains("nix") || OS.contains("nux") || OS.contains("aix"))
-			return OSType.LINUX;
-		return OSType.OTHER;
 	}
 
 	public File getLocalFolder() {

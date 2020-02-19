@@ -4,248 +4,27 @@
     <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="Nearly finished writing parser, rewritten lexer">
-      <change afterPath="$PROJECT_DIR$/doc/allclasses-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/allclasses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/allpackages-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-15.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-17.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-18.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-19.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-20.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-ui.structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jquery-ui.structure.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jszip/dist/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/jquery/jszip/dist/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/member-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/OSType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/class-use/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/class-use/OSType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/ContentLoader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/ContentWatcher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/Loadable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/ShipFactory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/class-use/ContentLoader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/class-use/ContentWatcher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/class-use/Loadable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/class-use/ShipFactory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/Lexer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/Parser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/ParserComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/class-use/Lexer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/class-use/Parser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/class-use/ParserComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/GenericNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/GenericRootNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/KeyValueNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/Node.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/TextNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/class-use/GenericNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/class-use/GenericRootNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/class-use/KeyValueNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/class-use/Node.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/class-use/TextNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/nodes/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/DataToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/EnumerationSeparatorToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/FloatToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/GenericDataToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/GenericSymbolToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/IntegerToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/KeyValueSeparatorToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/NewLineToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/SymbolToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/TextToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/Token.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/VersionToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/WhitespaceToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/DataToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/EnumerationSeparatorToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/FloatToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/GenericDataToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/GenericSymbolToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/IntegerToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/KeyValueSeparatorToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/NewLineToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/SymbolToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/TextToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/Token.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/VersionToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/class-use/WhitespaceToken.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/content/parser/tokens/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/Event.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/EventHandler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/EventPriority.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/Handler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/class-use/Event.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/class-use/EventHandler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/class-use/EventPriority.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/class-use/Handler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/event/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/Game.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/GameBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/GameObject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/Ship.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/Weapon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/class-use/Game.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/class-use/GameBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/class-use/GameObject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/class-use/Ship.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/class-use/Weapon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/game/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/Point2D.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/Window.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/class-use/Point2D.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/class-use/Window.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/graphics/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/client/TCPGameClient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/client/class-use/TCPGameClient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/client/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/client/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/client/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/TCPGameServer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/UDPEchoServer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/class-use/TCPGameServer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/class-use/UDPEchoServer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/network/server/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/net/battleships/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/package-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/type-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/DataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetResourceParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/AuthorNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/ChildNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/DamagePatternNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/NameNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/ParentNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/RootNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/ValueNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/nodes/VersionNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/DecimalToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/EnumerationSeparatorToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/GeneralNumericToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/GeneralToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/IntegerToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/KeyValueSeparatorToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/NewLineToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/NumericToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/TextToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/WhitespaceToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/datatypes/exceptions/AssetResourceParserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/datatypes/exceptions/InvalidKeyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/datatypes/exceptions/InvalidValueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/datatypes/exceptions/KeyAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/datatypes/exceptions/NoAssetResourceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/AssetResourceParserTest.java" afterDir="false" />
+    <list default="true" id="247b91d4-fe47-47b0-8674-33ba94308ec2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/EnvironmentData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/DataRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/battleships/datatypes/exceptions/MissingDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task '" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_json_json_20190722.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/net.battleships.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/ContentLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/ContentLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/Loadable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/ShipFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/AssetResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/ShipLoadable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/WeaponFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/WeaponLoadable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetResourceLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/Parser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/GenericRootNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/nodes/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/DataToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/EnumerationSeparatorToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/FloatToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericDataToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/GenericSymbolToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/IntegerToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/KeyValueSeparatorToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/NewLineToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/SymbolToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/TextToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/Token.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/VersionToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/parser/tokens/WhitespaceToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetResourceLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetResourceLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetResourceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/AssetResourceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/IntegerToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/content/assetResourceParser/tokens/IntegerToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/AssetResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/AssetResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/battleships/game/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/battleships/game/Weapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/atomicBomb.weapon" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/atomicBomb.weapon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/content/ContentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/ContentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/content/LexerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/game/ShipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/battleships/content/AssetResourceParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/battleships/content/AssetResourceParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,6 +64,12 @@
                 <item name="net.battleships" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="net.battleships" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -335,20 +120,42 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last.edited.regexp" value="" />
+    <property name="last.edited.regexp" value="-1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="net.battleships.datatypes.exceptions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\phida\Documents\TGM\SEW\zusatz\battleships\src\main\resources\data" />
       <recent name="$PROJECT_DIR$/src/main/resources/battleships" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.battleships [test]">
+  <component name="RunManager" selected="Gradle.battleships [runJar]">
+    <configuration name="battleships [buildJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="battleships [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -418,6 +225,25 @@
         <option name="taskNames">
           <list>
             <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="battleships [runJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -514,12 +340,16 @@
       <item itemvalue="Gradle.battleships [jar]" />
       <item itemvalue="Gradle.battleships [javadoc]" />
       <item itemvalue="Gradle.battleships [run]" />
+      <item itemvalue="Gradle.battleships [buildJar]" />
       <item itemvalue="Gradle.battleships [build]" />
       <item itemvalue="Gradle.battleships [clean]" />
+      <item itemvalue="Gradle.battleships [runJar]" />
       <item itemvalue="Gradle.battleships [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.battleships [runJar]" />
+        <item itemvalue="Gradle.battleships [buildJar]" />
         <item itemvalue="Gradle.battleships [test]" />
         <item itemvalue="Gradle.battleships [clean]" />
         <item itemvalue="Gradle.battleships [build]" />
@@ -689,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580565821875</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Nearly finished writing parser, rewritten lexer">
+      <created>1581431297068</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1581431297068</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -734,11 +571,11 @@
     </state>
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580650902762" />
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1580378717991" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1581274736922">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1581925212066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581274736922" />
-    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580460883634" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581438519521" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581925212066" />
     <state x="273" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581272300235">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -757,76 +594,80 @@
     </state>
     <state x="501" y="127" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580418879393" />
     <state x="501" y="127" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1580393442414" />
-    <state x="341" y="8" key="CommitChangelistDialog2" timestamp="1581431249979">
+    <state x="228" y="0" key="CommitChangelistDialog2" timestamp="1582134938227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="341" y="8" key="CommitChangelistDialog2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581431249979" />
+    <state x="228" y="0" key="CommitChangelistDialog2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1582134938227" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1580393279980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580393279980" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1580687628338">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1581692480803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581624856045" />
     <state width="1637" height="167" key="GridCell.Tab.0.bottom/0.0.1536.824/129.-1050.1680.1010@129.-1050.1680.1010" timestamp="1580402518489" />
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580465231122" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1580687628338">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581692480803" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1581692480803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581624856045" />
     <state width="1637" height="167" key="GridCell.Tab.0.center/0.0.1536.824/129.-1050.1680.1010@129.-1050.1680.1010" timestamp="1580402518489" />
-    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580465231122" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1580687628336">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581692480803" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1581692480803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628336" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581624856045" />
     <state width="1637" height="167" key="GridCell.Tab.0.left/0.0.1536.824/129.-1050.1680.1010@129.-1050.1680.1010" timestamp="1580402518489" />
-    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580465231122" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1580687628338">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581692480803" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1581692480803">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581624856045" />
     <state width="1637" height="167" key="GridCell.Tab.0.right/0.0.1536.824/129.-1050.1680.1010@129.-1050.1680.1010" timestamp="1580402518489" />
-    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580465231122" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1580687628338">
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581692480803" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1581524660534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1580687628338">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581524660534" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581508227761" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1581524660534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1580687628338">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581524660534" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581508227759" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1581524660534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1580687628338">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581524660534" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581508227759" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1581524660534">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580687628338" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581524660534" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581508227761" />
     <state x="481" y="129" key="MultipleFileMergeDialog" timestamp="1580565096186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="129" key="MultipleFileMergeDialog/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580565096186" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1581431132329">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1581503139334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581431132329" />
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580467231439" />
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1581431170268">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581503139334" />
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2" timestamp="1581431299759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581431170268" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1581342093642">
+    <state x="361" y="135" key="Vcs.Push.Dialog.v2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581431299759" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1581957163406">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581269982086" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581342093642" />
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580653209937">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581595031692" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581957163406" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581518950958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580653209937" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581518950958" />
     <state x="302" y="-956" width="1077" height="809" maximized="true" key="dock-window-1" timestamp="1581318731376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -835,15 +676,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="511" y="43" key="refactoring.ChangeSignatureDialog/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581271660221" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1581271192108">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1581689770953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581271192108" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1580465484694" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1580650744574">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581604546253" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1581689770953" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581687537445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1580650744574" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580460278322" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/129.-1050.1680.1010@0.0.1536.824" timestamp="1581606568763" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581687537445" />
   </component>
 </project>

@@ -28,10 +28,10 @@ dependencies {
 	// Use JUnit test framework
 	testImplementation 'junit:junit:4.12'
 
-	compile 'org.json:json:20190722'
+	//compile 'org.json:json:20190722'
 }
 
-jar {
+task buildJar(type: Jar) {
 	from 'LICENSE'
 	manifest {
 		attributes 'Implementation-Title': 'Battleships Jar Build',
@@ -40,6 +40,15 @@ jar {
 	}
 	archiveBaseName.set('Battleships')
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+	with jar
+}
+
+task runJar(type: Jar) {
+	buildJar
+	javaexec {
+		main="-jar"
+		args = ["build/libs/Battleships.jar"]
+	}
 }
 
 // Define the main class for the application
